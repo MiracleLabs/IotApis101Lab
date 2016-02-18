@@ -49,8 +49,7 @@ var deviceToken = “<your-device-Token>”
 msg.fuel = msg.payload.d.fuel
 msg.lat = msg.payload.d.lat
 msg.long = msg.payload.d.long
-msg.loopback_model_name = "<Your Loopback Model Name>"
-msg.payload = {"fuel":msg.payload.d.fuel,"loopback__model__name":"<Your Model Name>"}
+msg.payload = {"fuel":msg.fuel,"lat":msg.lat,:long:msg.long,"loopback__model__name":"<Your Model Name>"}
 return msg;
 ```
 
